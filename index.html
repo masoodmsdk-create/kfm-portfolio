@@ -24,6 +24,7 @@
     <!-- Font Awesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
 
@@ -39,17 +40,15 @@
 
 <body>
 
-    <!--================ NAVBAR ================-->
-
     <header>
 
         <nav class="navbar">
 
             <div class="container nav-container">
 
-                <a href="#" class="logo">
+                <a href="#" class="logo" aria-label="Home">
 
-                    <img src="assets/logo/logo.svg" alt="logo">
+                    <img src="assets/logo/logo.svg" alt="Khaleel Farooq logo">
 
                 </a>
 
@@ -57,31 +56,27 @@
 
                     <li><a class="active" href="#">Home</a></li>
 
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
 
-                    <li><a href="#">Experience</a></li>
+                    <li><a href="#experience">Experience</a></li>
 
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
 
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
 
-                    <li><a href="#">Certifications</a></li>
-
-                    <li><a href="#">Blog</a></li>
-
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
 
                 <div class="nav-right">
 
-                    <button class="theme-btn">
+                    <button class="theme-btn" aria-label="Toggle theme">
 
                         <i class="fa-solid fa-moon"></i>
 
                     </button>
 
-                    <div class="hamburger">
+                    <div class="hamburger" aria-label="Open navigation">
 
                         <span></span>
                         <span></span>
@@ -97,119 +92,447 @@
 
     </header>
 
-    <!-- Hero comes here -->
-     <!--================ HERO ================-->
+    <section class="hero" id="home">
 
-<section class="hero">
+        <div class="background-layer" aria-hidden="true">
+            <span class="bg-orb orb-one"></span>
+            <span class="bg-orb orb-two"></span>
+            <span class="hex-outline hex-one"></span>
+            <span class="hex-outline hex-two"></span>
+            <span class="grid-overlay"></span>
+            <span class="matrix-pattern"></span>
+            <span class="particle p-one"></span>
+            <span class="particle p-two"></span>
+            <span class="particle p-three"></span>
+            <span class="particle p-four"></span>
+        </div>
 
-    <div class="container hero-container">
+        <div class="container hero-container">
 
-        <div class="hero-left">
+            <div class="hero-left">
 
-            <span class="hello">
-                Hello, I'm
-            </span>
+                <span class="hello" data-aos="fade-right" data-aos-delay="100">
+                    HELLO, I'M
+                </span>
 
-            <h1>
+                <h1 data-aos="fade-right" data-aos-delay="180">
+                    Khaleel Farooq
+                    <span>Masood</span>
+                </h1>
 
-                Khaleel Farooq
+                <div class="designation" data-aos="fade-right" data-aos-delay="220">
+                    Senior Quality Engineer
+                </div>
 
-                <span>Masood</span>
+                <h2 data-aos="fade-right" data-aos-delay="260">
+                    Engineering Quality.
+                    <br>
+                    <span>Automating Confidence.</span>
+                </h2>
 
-            </h1>
+                <p class="hero-summary" data-aos="fade-right" data-aos-delay="320">
+                    Senior Quality Engineer with 5+ years of experience delivering enterprise-grade quality solutions across ETL Testing, Test Automation, Performance Engineering, AI-assisted Testing, and Digital Twin platforms.
+                    Passionate about building scalable test frameworks, improving product reliability, and driving quality throughout the software development lifecycle.
+                </p>
 
-            <div class="designation">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="360">
+                    <a href="#projects" class="btn-primary">
+                        Explore My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/resume.pdf" class="btn-secondary" download>
+                        Download Resume
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
 
-                QA ENGINEER
+                <div class="social-links" data-aos="fade-up" data-aos-delay="420">
+                    <a href="https://github.com/masoodmsdk-create/" target="_blank" rel="noreferrer" title="Personal GitHub" aria-label="Personal GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/bplvoter" target="_blank" rel="noreferrer" title="Village Service GitHub" aria-label="Village Service GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://bplvoter.github.io/voter-search/" target="_blank" rel="noreferrer" title="Voter Search Web App" aria-label="Voter Search Web App"><i class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.linkedin.com/in/farooq-masood-khaleel?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:masoodmsdk@gamil.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="460">
+                    <div class="stats-shell">
+                        <div class="stat-card">
+                            <span class="stat-icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <strong data-target="5" data-suffix="+">0</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                            <strong data-target="20" data-suffix="+">0</strong>
+                            <span>Projects Delivered</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon"><i class="fa-solid fa-building"></i></span>
+                            <strong data-target="4" data-suffix="+">0</strong>
+                            <span>Enterprise Products</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon"><i class="fa-solid fa-award"></i></span>
+                            <strong>Multiple</strong>
+                            <span>Industry Awards</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <h2>
+            <div class="hero-right" data-aos="zoom-in" data-aos-delay="240">
 
-                Engineering Quality.
-
-                <br>
-
-                <span>Automating Confidence.</span>
-
-            </h2>
-
-            <p>
-
-                Building reliable software through Test Automation,
-                Performance Engineering, Oracle SQL, API Testing and
-                Continuous Quality.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#" class="btn-primary">
-
-                    Explore My Work
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-                <a href="#" class="btn-secondary">
-
-                    Contact Me
-
-                    <i class="fa-regular fa-comment"></i>
-
-                </a>
-
-            </div>
-
-            <div class="social-links">
-
-                <a href="#"><i class="fab fa-github"></i></a>
-
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-
-                <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <strong>4+</strong>
-                    <span>Years Experience</span>
+                <div class="profile-shell">
+                    <div class="profile-glow"></div>
+                    <img class="profile-single" src="assets/images/profile2.png" alt="Khaleel Farooq Masood profile">
                 </div>
-                <div class="stat-card">
-                    <strong>15+</strong>
-                    <span>Projects Delivered</span>
+
+                <div class="scroll-indicator">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span>Scroll to Explore</span>
                 </div>
-                <div class="stat-card">
-                    <strong>100%</strong>
-                    <span>Quality Focused</span>
-                </div>
-                <div class="stat-card">
-                    <strong>Client</strong>
-                    <span>Satisfaction Driven</span>
-                </div>
+
             </div>
 
         </div>
 
-        <div class="hero-right">
+    </section>
 
-            <div class="glow"></div>
-
-            <img class="profile-single"
-                src="assets/images/profile2.png"
-                alt="Khaleel Farooq Masood profile">
-
+    <section class="about-section section-block" id="about">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">About Me</span>
+                <h2>From Civil Engineering to Senior Quality Engineering leadership.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy" data-aos="fade-right" data-aos-delay="120">
+                    <p>I began my professional journey as a Civil Engineer after graduating from JNTU Hyderabad. While working on construction projects, I discovered a much stronger passion for technology, automation, and software engineering.</p>
+                    <p>During the COVID period, I dedicated myself to learning Software Testing, ETL Testing, and industry best practices, successfully transitioning into the IT industry.</p>
+                    <p>Since then, I have grown from an ETL Test Engineer into a Senior Quality Engineer specializing in Test Automation, Performance Engineering, AI-assisted Testing, Digital Twin platforms, and Enterprise Software Quality.</p>
+                    <p>I enjoy solving complex engineering challenges, designing scalable automation frameworks, improving software reliability, mentoring teammates, and continuously learning emerging technologies.</p>
+                </div>
+                <div class="about-highlights" data-aos="fade-left" data-aos-delay="140">
+                    <div class="highlight-card">
+                        <span class="highlight-number">5+</span>
+                        <p>Years of hands-on enterprise QA delivery</p>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">AI</span>
+                        <p>AI-assisted testing workflows and quality intelligence</p>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">Digital Twin</span>
+                        <p>Automation for industrial digital twin and manufacturing platforms</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <section class="education-section section-block" id="education">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Education</span>
+                <h2>Academic milestones that shaped an engineering mindset.</h2>
+            </div>
+            <div class="timeline-cards">
+                <article class="timeline-card" data-aos="fade-up" data-aos-delay="120">
+                    <span class="timeline-year">2014 – 2018</span>
+                    <h3>Bachelor of Technology</h3>
+                    <p>Civil Engineering<br>Jawaharlal Nehru Technological University (JNTU), Hyderabad</p>
+                </article>
+                <article class="timeline-card" data-aos="fade-up" data-aos-delay="140">
+                    <span class="timeline-year">2012 – 2014</span>
+                    <h3>Intermediate (MPC)</h3>
+                    <p>Board of Intermediate Education, Andhra Pradesh</p>
+                </article>
+                <article class="timeline-card" data-aos="fade-up" data-aos-delay="160">
+                    <span class="timeline-year">Completed 2012</span>
+                    <h3>SSC</h3>
+                    <p>Board of Secondary Education, Andhra Pradesh</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section class="career-section section-block" id="career">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Career Journey</span>
+                <h2>Progression from construction site engineering to enterprise QA leadership.</h2>
+            </div>
+            <div class="vertical-timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="120">
+                    <span class="timeline-step">01</span>
+                    <div>
+                        <h3>Site Engineer</h3>
+                        <p class="timeline-role">MPR Constructions · 2018 – 2020</p>
+                        <p>Started my career in Civil Engineering managing construction projects, site execution, planning, and coordination. This experience strengthened my leadership, communication, planning, and problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="140">
+                    <span class="timeline-step">02</span>
+                    <div>
+                        <h3>Software QA Engineer</h3>
+                        <p class="timeline-role">Startup Company · 2021 – 2022</p>
+                        <p>Successfully transitioned into Software Testing after completing professional training in ETL Testing and Software Quality Assurance. Worked on Retail and Healthcare projects involving ETL Testing, SQL Validation, Test Documentation, Defect Tracking, and Requirement Analysis.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="160">
+                    <span class="timeline-step">03</span>
+                    <div>
+                        <h3>Quality Engineer → Senior Quality Engineer</h3>
+                        <p class="timeline-role">KnowledgeLens · August 2022 – Present</p>
+                        <p>Rapidly progressed across multiple enterprise projects involving ETL Testing, Automation Engineering, Performance Testing, AI-assisted Testing, and Product Quality. Following the acquisition by Rockwell Automation, continued contributing to enterprise industrial software platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="js/navbar.js"></script>
+    <section class="experience-section section-block" id="experience">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Experience</span>
+                <h2>Enterprise projects and leadership in QA, automation, and performance.</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="120">
+                    <h3>ZS Associates (Contract)</h3>
+                    <span class="card-role">ETL Test Engineer</span>
+                    <div class="card-list">
+                        <p>• ETL Testing • SQL Validation • Data Warehouse Testing • Healthcare Domain • Test Documentation</p>
+                    </div>
+                    <p class="card-highlight">Achievement: Won Star of the Month Rookie Award.</p>
+                </article>
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="140">
+                    <h3>UnifyTwin Visualization</h3>
+                    <span class="card-role">Senior QA Engineer</span>
+                    <div class="card-list">
+                        <p>• Cypress Automation • Dashboard Testing • Digital Twin Testing • Widget Automation • API Testing • Regression Automation • Led Visualization Module testing • Mentored junior QA engineers</p>
+                    </div>
+                </article>
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="160">
+                    <h3>FactoryTalk Production Performance Management</h3>
+                    <span class="card-role">QA Test Lead</span>
+                    <div class="card-list">
+                        <p>• Client Communication • Stakeholder Meetings • Root Cause Analysis • Test Strategy • Test Planning • Release Validation • Manufacturing Domain</p>
+                    </div>
+                    <p class="card-highlight">Successfully stabilized a business-critical product by restructuring testing strategies and improving release quality.</p>
+                </article>
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="180">
+                    <h3>UnifyTwin Performance Engineering</h3>
+                    <span class="card-role">Performance Test Engineer</span>
+                    <div class="card-list">
+                        <p>• JMeter • Jenkins • Prometheus • Grafana • Server Monitoring • Performance Framework Design</p>
+                    </div>
+                    <p class="card-highlight">Successfully designed and implemented the team's first reusable performance testing framework.</p>
+                </article>
+                <article class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>UnifyTwin Edge Management & AI</h3>
+                    <span class="card-role">Senior Quality Engineer</span>
+                    <div class="card-list">
+                        <p>• Playwright Automation • Linux • Docker • Kubernetes • AI Testing • MCP Integration • Edge Device Validation • Database Validation</p>
+                    </div>
+                    <p class="card-highlight">Introduced AI-assisted testing workflows and modern automation practices using Playwright.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section section-block" id="skills">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Technical Skills</span>
+                <h2>Tools and skills that power enterprise-quality engineering.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="120">
+                    <h3>Testing</h3>
+                    <ul>
+                        <li>Functional Testing</li>
+                        <li>ETL Testing</li>
+                        <li>API Testing</li>
+                        <li>Regression Testing</li>
+                        <li>Smoke Testing</li>
+                        <li>Integration Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Validation Testing</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="140">
+                    <h3>Automation</h3>
+                    <ul>
+                        <li>Cypress</li>
+                        <li>Playwright</li>
+                        <li>JMeter</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="160">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="180">
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>Azure</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Jenkins</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>JIRA</li>
+                        <li>Azure DevOps</li>
+                        <li>qTest</li>
+                        <li>JAMA</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="220">
+                    <h3>AI</h3>
+                    <ul>
+                        <li>GitHub Copilot</li>
+                        <li>MCP Servers</li>
+                        <li>AI Agents</li>
+                        <li>Prompt Engineering</li>
+                        <li>AI-assisted Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section section-block" id="projects">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Projects</span>
+                <h2>Selected projects demonstrating modern QA and automation delivery.</h2>
+            </div>
+            <div class="cards-grid project-grid">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="120">
+                    <h3>JC Penney</h3>
+                    <p>Retail Domain</p>
+                    <p>Software Testing</p>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="140">
+                    <h3>Roche</h3>
+                    <p>Healthcare</p>
+                    <p>ETL Testing • SQL Validation • Data Validation</p>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="160">
+                    <h3>UnifyTwin Visualization</h3>
+                    <p>Automation</p>
+                    <p>Digital Twin • Dashboard Testing</p>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="180">
+                    <h3>FactoryTalk PPM</h3>
+                    <p>QA Leadership</p>
+                    <p>Manufacturing Domain • Release Quality</p>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>UnifyTwin Performance</h3>
+                    <p>JMeter</p>
+                    <p>Performance Framework • Grafana • Prometheus</p>
+                </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="220">
+                    <h3>UnifyTwin Edge</h3>
+                    <p>Playwright • Linux • Docker • Kubernetes</p>
+                    <p>AI Testing</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards-section section-block" id="awards">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Awards</span>
+                <h2>Recognition for quality excellence and leadership.</h2>
+            </div>
+            <div class="cards-grid award-grid">
+                <article class="award-card" data-aos="fade-up" data-aos-delay="120">
+                    <h3>🏆 Quality Virtuoso Award</h3>
+                    <p>Organization-wide Quality Excellence Award</p>
+                    <span>Rockwell Automation</span>
+                </article>
+                <article class="award-card" data-aos="fade-up" data-aos-delay="140">
+                    <h3>⭐ Star of the Month</h3>
+                    <p>Awarded Multiple Times</p>
+                    <span>KnowledgeLens</span>
+                </article>
+                <article class="award-card" data-aos="fade-up" data-aos-delay="160">
+                    <h3>💎 Valuable Gem Award</h3>
+                    <p>Business Unit Recognition</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements-section section-block" id="achievements">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Achievements</span>
+                <h2>Key outcomes from my QA and engineering journey.</h2>
+            </div>
+            <ul class="achievement-list" data-aos="fade-up" data-aos-delay="120">
+                <li>Successfully transitioned from Civil Engineering to Software Engineering.</li>
+                <li>Delivered enterprise quality solutions across Manufacturing, Healthcare, Retail, and Digital Twin domains.</li>
+                <li>Introduced Performance Testing Framework for enterprise products.</li>
+                <li>Led multiple business-critical testing initiatives.</li>
+                <li>Built AI-assisted Quality Engineering workflows.</li>
+                <li>Mentored junior QA engineers.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hobbies-section section-block" id="hobbies">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-label">Interests</span>
+                <h2>Professional interests that complement quality engineering.</h2>
+            </div>
+            <div class="hobbies-grid" data-aos="fade-up" data-aos-delay="120">
+                <span class="hobby-pill">Cricket</span>
+                <span class="hobby-pill">Chess</span>
+                <span class="hobby-pill">Table Tennis</span>
+                <span class="hobby-pill">Public Speaking</span>
+                <span class="hobby-pill">Technology</span>
+                <span class="hobby-pill">Artificial Intelligence</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section section-block" id="contact">
+        <div class="container contact-panel" data-aos="fade-up">
+            <div>
+                <span class="section-label">Let's Build Quality Together</span>
+                <h2>I'm always open to discussing Quality Engineering, Test Automation, Performance Engineering, AI Engineering, or exciting software opportunities.</h2>
+            </div>
+            <div class="contact-details">
+                <a href="mailto:masoodmsdk@gamil.com">masoodmsdk@gamil.com</a>
+                <a href="tel:+919740973141">+91 97409 73141</a>
+                <span>From Banaganapalli, Nandyal District, Andhra Pradesh</span>
+                <span>Now settled in Electronic City, Bangalore, Karnataka</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
