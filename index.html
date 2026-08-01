@@ -40,7 +40,7 @@
 
 <body>
     <script>
-        if (!window.location.search.includes('desktop=1')) {
+        if (window.matchMedia('(max-width: 768px)').matches && !window.location.search.includes('desktop=1')) {
             window.location.replace('mobile.html');
         }
     </script>
