@@ -25,32 +25,50 @@
     flex-direction: column;
   }
 
+  .nav-container {
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .hero {
     padding-top: 70px;
+    padding-bottom: 60px;
   }
 
   .hero h1 {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 52px;
   }
 
   .hero h2 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
-  .hero p {
-    font-size: 17px;
-    line-height: 28px;
+  .hero p,
+  .hero-summary {
+    font-size: 16px;
+    line-height: 27px;
   }
 
   .hero-buttons {
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-right {
-    min-height: 520px;
+    min-height: 420px;
   }
 
   .hero-stats {
@@ -72,5 +90,87 @@
 
   .social-links {
     justify-content: center;
+  }
+
+  .section-head h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about-grid,
+  .timeline-cards,
+  .cards-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card,
+  .project-card,
+  .award-card,
+  .timeline-card,
+  .skill-card {
+    padding: 20px;
+  }
+
+  .vertical-timeline {
+    padding-left: 16px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .timeline-step {
+    margin-bottom: 4px;
+  }
+
+  .achievement-list {
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .hero-summary {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .designation {
+    font-size: 15px;
+  }
+
+  .profile-shell {
+    max-width: 280px;
+  }
+
+  .section-head {
+    margin-bottom: 28px;
+  }
+
+  .section-label {
+    font-size: 12px;
+  }
+
+  .experience-card h3,
+  .project-card h3,
+  .award-card h3,
+  .timeline-card h3 {
+    font-size: 18px;
   }
 }
