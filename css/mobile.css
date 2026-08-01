@@ -83,16 +83,21 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 16px;
+  padding: 13px 16px;
   border-radius: 999px;
   color: #ffffff;
   font-weight: 800;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.02em;
-  background: linear-gradient(90deg, #69b8ff, #7c8cff);
-  box-shadow: 0 14px 28px rgba(105, 184, 255, 0.28);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  box-shadow: 0 12px 24px rgba(105, 184, 255, 0.24);
   border: 1px solid rgba(255,255,255,0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.desktop-link:active {
+  transform: scale(0.97);
 }
 
 .desktop-link::after {
