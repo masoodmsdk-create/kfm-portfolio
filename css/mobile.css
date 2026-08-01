@@ -83,20 +83,21 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-radius: 999px;
-  color: #06111e;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 800;
   text-decoration: none;
   font-size: 14px;
-  background: linear-gradient(90deg, var(--accent), #7c8cff);
-  box-shadow: 0 12px 24px rgba(105, 184, 255, 0.22);
-  border: 1px solid rgba(255,255,255,0.16);
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #69b8ff, #7c8cff);
+  box-shadow: 0 14px 28px rgba(105, 184, 255, 0.28);
+  border: 1px solid rgba(255,255,255,0.18);
 }
 
 .desktop-link::after {
   content: "↗";
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .card {
